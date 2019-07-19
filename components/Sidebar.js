@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Sidebar = () => (
   <div className="sidebar">
     <div className="side-title">
@@ -6,11 +8,27 @@ const Sidebar = () => (
     </div>
 
     <div className="side-links">
-      <a href="#">Introduction</a>
-      <a href="#">Geting started</a>
-      <a href="#">Struture</a>
-      <a href="#">Usage</a>
-      <a href="#">Support</a>
+      <Link href="/">
+        <a>Introduction</a>
+      </Link>
+      <Link href="/getting-started">
+        <a>Getting Started</a>
+      </Link>
+      <Link href="/cli">
+        <a>Dionisio CLI</a>
+      </Link>
+      <Link href="/docs">
+        <a>Docs</a>
+      </Link>
+      <Link href="/api">
+        <a>API</a>
+      </Link>
+      <Link href="/faq">
+        <a>FAQ</a>
+      </Link>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
     </div>
 
     <div className="side-footer">
